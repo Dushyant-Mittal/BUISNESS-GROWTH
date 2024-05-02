@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        border-radius: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 729px;
+        width: 100%;
+        background-color: rgb(95, 179, 232);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 220px
+    }
+    .card{
+        height: 300px;
+        width: 660px;
+        display: flex;
+        flex-direction: row;
+        background-color: aliceblue;
+        gap: 0px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(53, 26, 53);
+        color: white
+    }
+    .left h2{
+        font-weight: bold;
+        padding: 40px;
+    }
+    .left #12{
+        font-size: 12px;
+    }
+    .box2{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .box3{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+    .ab{
+        padding-right: 20px;
+    }
+    .cd{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ef{
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    .card img{
+        height: 300px;
+        width: 330px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div class="box1">
+                     <h2>Get insights that help your buisness grow.</h2>
+                </div>
+
+                <div class="box2">
+                    <p id="12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quos adipisci necessitatibus odit nobis!
+                    Eaque aliquam quia aliquid porro natus voluptas ipsam molestiae.</p>
+                </div>
+
+                <div class="box3">
+                    <div class="ab">
+                        <p id="123">10K+</p>
+                        <p id="123">comments</p>
+                    </div>
+
+                    <div class="cd">
+                        <p id="456">214</p>
+                        <p id="456">paid users</p>
+                    </div>
+
+                    <div class="ef">
+                        <p id="789">12M+</p>
+                        <p id="789">Views</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.MqaN4Da_jMPgO_PlKiwonwHaEK&pid=Api&P=0&h=180">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
