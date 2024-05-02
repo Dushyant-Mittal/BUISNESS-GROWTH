@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-content: center;
+            height: 2600px;
+            width: 1500px; 
+        }
+        .d1{
+            height: 40px;
+            width: 1480px;
+            padding-bottom: 90px;
+            padding-top: 30px;
+        }
+        .hcontent{
+            padding-left: 100px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;   
+        }
+        .logo img{
+            padding-top: 5px;
+        }
+        .logo1{
+            font-size: 26px;
+            color: black;
+            font-weight: bolder;
+            padding-top: 3px;
+            padding-left: 25px;
+            padding-right: 150px;
+        }
+        .nav{
+            padding-top: 7px;
+            font-size: medium;
+            font-style: italic;
+            padding-left: 150px;
+            padding-right: 380px;
+            word-spacing: 20px;
+        }
+        @media  screen and (max-width:260px) {
+            .nav{
+                display: none;
+            }
+        }
+        .link{
+            color: black;
+        }
+        .contact{
+            border: 2px solid #151617;
+            background-color: #5f7de3;
+            color: #f3eded;
+            font-size: medium;
+            font-weight: 50px;
+            padding-top: 2px;
+            height: 25px;
+            width: 120px;
+        }
+        @media  screen and (max-width:260px) {
+            .contact{
+                display: none;
+            }
+        }
+        .b1{
+            display: none;
+            height: 25px;
+        }
+        @media  screen and (max-width:260px) {
+            .b1{
+                display: block;
+                align-items: end;
+            }
+        }
+        .icon{
+            height: 19px;
+            width: 20px;
+            padding-top: 2px;
+        }
+        .content{
+            height: 550px;
+            padding: 50px;
+        }
+        @media  screen and (max-width:260px) {
+            .content{
+                padding-bottom: 1000px;
+            }
+        }
+        .s1{
+            height: 500px;
+            width: 1380px;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            padding-left: 110px;
+            gap: 70px;
+        }
+        @media  screen and (max-width:260px) {
+            .s1{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .left{
+            width: 600px;
+            animation: slidefromleft 5s ease forwards;
+            opacity: 0;
+        }
+        @keyframes slidefromleft {
+            
+            0%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        #ab{
+            font-size: large;
+            font-style: italic;
+            color: rgb(216, 31, 31);
+            font-weight: bolder;
+            padding-bottom: 6px;
+        }
+        .left h1{
+            font-weight: 50px;
+            font-size: 59px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+        }
+        .left cd{
+            font-size: medium;
+            font-weight: bold;
+            color: rgb(11, 11, 11);
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            padding-top: 60px;
+            gap: 10px;
+        }
+        .b2{
+            width: 80px;
+            border: 1px solid blue;
+            background-color: blue;
+            color: white;
+        }
+        .b3{
+            width: 80px;
+            border: 1px solid rgb(9, 9, 9);
+            background-color: rgb(9, 9, 9);
+            color: white;
+        }
+        .right{
+            width: 50%;
+        }
+        .right img{
+            width: 500px;
+            height: 450px;
+            border: 1px solid white;
+            border-radius: 10px;
+            transition: all 5s 0s;
+        }
+        .right img:hover{
+            transform :scale(1.2)
+        }
+        .c1{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-content: center;
+            padding-top: 50px;
+            padding-right:100px;
+            padding-left: 20px;
+            animation: slidefromleft 4s ease forwards;
+            opacity: 0;
+        }
+        @keyframes slidefromleft {
+            
+            0%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }    
+        .c1 h2{
+            font-size: 30px;
+        }
+        .c1-c2{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+            padding-left: 420px;
+            height: 100px;
+        }
+        .c3{
+            display: flex;
+            flex-direction: row; 
+            background-color: rgb(206, 200, 200);
+            height: 50px;
+            width: 560px;
+            padding: 10px;
+            padding-left: 35px;
+        }
+        .i1{
+            height: 20px;
+            width: 20px;
+            padding-top: 4px;
+        }
+        .p1{
+            font-weight: bold;
+            color:gray;
+            padding-top: 4px;
+            padding-left: 7px; 
+        }
+        .i2{
+            height: 20px;
+            width: 70px;
+            padding-top: 4px;
+            padding-left: 50px;
+        }
+        .p2{
+            font-weight: bold;
+            color:gray;
+            padding-top: 4px;
+            padding-left:7px; 
+            padding-right: 70px;
+        }
+        .i3{
+            height: 20px;
+            width: 100px;
+            padding-top: 4px;
+        }
+        .p3{
+            font-weight: bold;
+            color:gray;
+            padding-top: 4px;
+            padding-left: 7px; 
+            padding-right: 15px;
+        }
+        .i4{
+            height: 20px;
+            width: 100px;
+            padding-top: 4px;
+        }
+        .p4{
+            font-weight: bold;
+            color:gray;
+            padding-top: 4px;
+            padding-left: 7px; 
+        }
+        .d2{
+            width: 1500px;
+            height: 800px;
+            background-color: rgb(219, 218, 218);
+            padding: 0px;
+            padding-left: 350px;
+            padding-bottom: 20px;
+        }
+        .card{
+            height: 820px;
+            width: 797px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card1 h2{
+            padding-left: 250px;
+            padding-bottom: 10px;
+        }
+        .card1 p{
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .card2{
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 680px;
+            width: 757px;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            padding: 20px;
+        }
+        .griditem1{
+            background-color: rgb(67, 67, 225);
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .griditem2{
+            background-color: rgba(248, 22, 236, 0.514); 
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .griditem3{
+            background-color: orange;
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .griditem4{
+            background-color: rgba(43, 226, 220, 0.637);
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .griditem5{
+            background-color: rgba(200, 34, 19, 0.847);
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .griditem6{
+            background-color: rgb(85, 46, 117);
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .gi{
+            height: 50px;
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-bottom: 15px;
+        }
+        .gh{
+            color: white;
+            font-size: 18px;
+            padding-left: 80px;
+            padding-bottom: 10px;
+        }
+        .gh1{
+            color: white;
+            font-size: 18px;
+            padding-left: 115px;
+            padding-bottom: 10px;
+        }
+        .gp{
+            text-align: center;
+            color: white;
+        }
+        .text{
+            width: 1500px;
+            height: 270px;
+            padding: 20px;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        .t1{
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        .t2{
+            height: 190px;
+            display: flex;
+            flex-direction: row;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            gap: 20px;
+        }
+        .t3{
+            height: 180px;
+            width: 400px;
+            border: 1px solid rgb(204, 203, 203);
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            transition: all 4s 0s;
+        }
+        .t3:hover{
+            transform :scale(1.1)
+        }
+        .it{
+            padding-top: 15px;
+            padding-left: 120px;
+            padding-bottom: 9px;
+            height: 55px;
+            width: 165px;
+        }
+        .pt1{
+            color: blue;
+            font-weight: bold;
+        }
+        .d4{
+            width: 1500px;
+            height: 350px;
+            padding-left: 190px;
+            padding-right: 190px;
+            padding-top: 10px;
+        }
+        .section{
+            height: 330px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .s-left{
+            width: 540px;
+        }
+        .s-left img{
+            height: 326px;
+            width: 540px;
+            transition: all 5s 0s;
+        }
+        .s-left img:hover{
+
+            transform :scale(0.6)
+        }
+        .s-right{
+            width: 540px;
+            background-color: azure;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 65px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+        .s-right h1{
+            font-size: 47px;
+            color: #234fe0;
+        }
+        .s-right p{
+            padding-bottom: 5px;
+        }
+        form{
+            height: 45px;
+            width: 255px;
+            background-color: white;
+            border: 2px solid #234fe0;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            gap: 10px;
+        }
+        input{
+            height: 30px;
+            border: 2px solid black;
+            padding-right: 15px;
+        }
+        button{
+            height: 25px;
+            width: 55px;
+            background-color: #234fe0;
+            color: white;
+        }
+        .r1{
+            padding-top: 10px;
+            height: 40px;
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            gap: 3px;
+        }
+        .footer{
+            height: 325px;
+            width: 1500px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 150px;
+            padding-right: 150px;
+            color: black;
+        }
+        .f1{
+            height: 300px;
+            width: 1200px;
+            padding: 50px;
+            padding-left: 110px;
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+        }
+        .fl1{
+            height: 270px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-content: center;
+            padding: 20px;
+        }
+        .ls{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ls h5{
+            font-size: larger;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        .ls1{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 260px;
+        }
+        .ls1 img{
+            width: 30px;
+            padding-top: 10px;
+        }
+        .ls3{
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            width: 260px;
+            gap: 10px;
+        }
+        .ls3 img{
+            width: 25px;
+            height: 25px;
+        }
+        .fl2{
+            gap: 30px;
+            display: flex;
+            flex-direction: row;
+            width:600px;
+            height: 250px;
+            padding: 20px;
+            padding-left: 60px;
+            gap: 30px;
+        }
+        .gz{
+            height: 210px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 5px;
+        }
+        .gz a{
+            color: black;
+            text-decoration: none;
+        }
+        .gx{
+            height: 220px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+            padding: 5px;
+        }
+        .gx a{
+            color: black;
+            text-decoration: none;
+        }
+        .gc{
+            height: 190px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 5px;
+        }
+        .gc a{
+            color: black;
+            text-decoration: none;
+        }
+        .gv{
+            height: 160px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 5px;
+        }
+        .gv a{
+            color: black;
+            text-decoration: none;
+        }
+        .f2{
+            height: 25px;
+            text-align: center;
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="d1">
+            <div class="hcontent">
+                <a href="@logo" class="logo">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.bJTT7Vz2tN7LeCO1uPRa-AHaHo&pid=Api&P=0&h=35">
+                    <p class="logo1">StudySrc</p>
+                </a>
+                <nav class="nav">
+                    <a href="@home" class="link">HOME</a>
+                    <a href="@pricing" class="link">PRICING</a>
+                    <a href="@features" class="link">FEATURES</a> 
+                    <a href="@blog" class="link">BLOG</a> 
+                    <a href="@about" class="link">ABOUT</a>
+                </nav>
+                <a href="contact" class="contact">
+                    CONTACT US
+                </a> 
+                <button type="button1" class="b1">
+                    <img src="https://pngimg.com/uploads/buttons/buttons_PNG147.png" alt="menu butten" class="icon">
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="s1">
+                <div class="left">
+                    <p id="ab">Very proud to introduce</p>
+                    <h1>Seamless Learing for Brighter Futures</h1>
+                    <P class="cd">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi et repellendus asperiores dignissimos corporis 
+                        expedita, numquam sunt rem voluptatibus ipsum nihil. Repudiandae dolores omnis excepturi facere ratione dignissimos
+                        a corrupti rerum, sequi libero ducimus commodi earum cumque possimus mollitia minima.
+                    </P>
+                    <div class="button"> 
+                        <button type="button2" class="b2">
+                            Start Now
+                        </button>
+                        <button type="button2" class="b3">
+                            Take Now
+                        </button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://i.pinimg.com/736x/01/dd/7a/01dd7a17f5eae98af6b777b35e6e1c0d--love-art-the-room.jpg">
+                </div> 
+            </div>
+        </div>
+
+        <div class="c1">
+            <h2>Trusted by the best</h2>
+            <div class="c1-c2">
+                <div class="c3">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/google-512.png" class="i1">
+                    <p class="p1">Google</p>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.dv9rllUPL44PYtKJUVIwsQAAAA&pid=Api&P=0&h=180" class="i2">
+                    <p class="p2">Microsoft</p>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.W_wlDkOLo6cXRuwHt37URQAAAA&pid=Api&P=0&h=180" class="i1">
+                    <p class="p1">Linkedin</p>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.jDZqfham2CULMfryq9zBAgHaJF&pid=Api&P=0&h=180" class="i2">
+                    <p class="p2">Apple</p>
+                </div>
+            </div>
+        </div>      
+        
+        <div class="d2">
+            <div class="card">
+                <div class="card1">
+                    <h2>Our competitive advantage</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique aliquid vel velit. Incidunt voluptatum architecto,
+                        delectus eum voluptatibus ratione?
+                    </p>
+                </div>
+                <div class="card2">
+                    <div class="griditem1">
+                        <img src="https://www.oogalights.com/Home-Garden/Lighting/Light-Bulbs/536881-A19-Medium-Base-Blue-Light-Bulb.jpg" class="gi">
+                        <h3 class="gh">Personalised Learning</h3>
+                        <p class="gp">
+                            It  is an educational approach that aims to customize learning for each student’s strengths,skills,and interests.
+                        </p>
+                    </div>
+                    <div class="griditem2">
+                        <img src="http://static1.squarespace.com/static/609701bc21f2ee5734517421/60970285376c3c778d0d2e8b/62047f9a8640f73d11469b7c/1646805982409/Pink+Money+Bag+Glitter+Cover+WM+1.jpg?format=1500w" class="gi">
+                        <h3 class="gh1">Affordability</h3>
+                        <p class="gp">
+                            To be able to do or spare something, esp without incurring financial difficulties or without risk of undesirable consequences.
+                        </p>
+                    </div>
+                    <div class="griditem3">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.byjtB4fgJlh0Y7cXqn_gwAHaFW&pid=Api&P=0&h=180" class="gi">
+                        <h3 class="gh">Industry Partnership</h3>
+                        <p class="gp">
+                            It is an arrangement between two or more people to oversee business operations and share its profits and liabilities. 
+                        </p>
+                    </div>
+                    <div class="griditem4">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.BPZpy1UeDbnNMsMpQrcEAQHaFj&pid=Api&P=0&h=180" class="gi">
+                        <h3 class="gh">Innovative Technology</h3>
+                        <p class="gp">
+                            It is defined as the creation and application of new or improved technologies, tools, systems, and processes that bring about significant advancements
+                        </p>
+                    </div>
+                    <div class="griditem5">
+                        <img src="https://cdn.pixabay.com/photo/2014/04/02/11/16/phone-305741_640.png" class="gi">
+                        <h3 class="gh">Responsive Support</h3>
+                        <p class="gp">
+                            It refers to how quickly and accurately your business is able to address support requests.
+                        </p>
+                    </div>
+                    <div class="griditem6">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.YGkqVcuxIV3ICCrlyiL1DQAAAA&pid=Api&P=0&h=180" class="gi">
+                        <h3 class="gh">Analytics and Insights</h3>
+                        <p class="gp">
+                            It is an influential platform dedicated to insights, trends, and opinion from the world of data-driven technologies. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="t1">
+                <h2 class="ht">What Others Say About Us</h2>
+                <div class="t2">
+                    <div class="t3">
+                        <p class="pt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure maxime doloremque odio cumque maiores impedit delectus aliquid inventore vitae accusamus!</p>
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.obFOH1_lF-yR7mMuHl3TPwHaHa&pid=Api&P=0&h=180" class="it">
+                        <p class="pt1">Sarah Johnson</p>
+                        <p class="it2">8th Grade English Teacher</p>
+                    </div>
+                    <div class="t3">
+                        <p class="pt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure maxime doloremque odio cumque maiores impedit delectus aliquid inventore vitae accusamus!</p>
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.b1pDxAfF4puafLP7ZrN9PAHaE7&pid=Api&P=0&h=180" class="it">
+                        <p class="pt1">Mark Davis</p>
+                        <p class="it2">Parent</p>
+                    </div>
+                    <div class="t3">
+                        <p class="pt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure maxime doloremque odio cumque maiores impedit delectus aliquid inventore vitae accusamus!</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.Llho5l0UhMwBvUjNlbjJLgAAAA&pid=Api&P=0&h=180" class="it">
+                        <p class="pt1">Dr.James Carter</p>
+                        <p class="it2">School Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d4">
+            <div class="section">
+                <div class="s-left">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.ukgUw4lYlKP4P5yVEePUIQHaEK&pid=Api&P=0&h=180">
+                </div>
+                <div class="s-right">
+                    <h1>Get the latest updates</h1>
+                    <p>Sign up for our newsletter</p>
+                    <form>
+                        <input type="email" name="email" placeholder="Email"/>
+                        <button>Send</button>
+                    </form>
+                    <div class="r1">
+                        <p>By signing up to our newsletter you agree to our</p>
+                        <a href="terms of service">Term of Service</a>
+                        <p>and</p>
+                        <a href="privacy policy">Privacy Policy.</a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="footer">
+            <div class="f1">
+                <div class="fl1">
+                    <div class="ls">
+                        <div class="ls1">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.bJTT7Vz2tN7LeCO1uPRa-AHaHo&pid=Api&P=0&h=25">                       
+                            <h5>StudySrc</h5>
+                        </div>
+                        <div class="ls2">
+                            <p>Seamless Learning for Brighter Futures.</p>
+                        </div>
+                        <div class="ls3">
+                           <img src="http://clipart-library.com/new_gallery/3-35207_instagram-logo-black-transparent.png">
+                           <img src="https://tse1.mm.bing.net/th?id=OIP.SVb-flIK3vc0uIm7_QkfFAHaGB&pid=Api&P=0&h=180z">
+                           <img src="https://1000logos.net/wp-content/uploads/2017/03/Symbol-LinkedIn.jpg">
+                           <img src="https://www.citypng.com/public/uploads/preview/-11600714838h7bubtj8dh.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="fl2">
+                    <div class="gz">
+                        <h4>Products</h4>
+                        <a href="overview">Overview</a>
+                        <a href="Solutions">Solutions</a>
+                        <a href="Pricing">Pricing</a>
+                        <a href="Customers">Customers</a>
+                    </div>
+                    <div class="gx">
+                        <h4>Company</h4>
+                        <a href="About">About</a>
+                        <a href="Investor Relations">Investor Relations</a>
+                        <a href="Jobs">Jobs</a>
+                        <a href="Press">Press</a>
+                        <a href="Blog">Blog</a>                      
+                    </div>
+                    <div class="gc">
+                        <h4>Support</h4>
+                        <a href="Contact">Contact</a>
+                        <a href="Documentation">Documentation</a>
+                        <a href="Chat">Chat</a>
+                        <a href="FAQ">FAQ</a>
+                    </div>
+                    <div class="gv">
+                        <h4>Legal</h4>
+                        <a href="Terms of Service">Terms of Service</a>
+                        <a href="Privacy Policy">Privacy Policy</a>
+                        <a href="Cookie settings">Cookie settings</a>    
+                    </div>
+                </div>
+            </div>
+            <div class="f2">
+                &copy; 2021-Present StudySrc.All rights reserved.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
