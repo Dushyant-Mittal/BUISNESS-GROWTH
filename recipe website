@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe PROJECT</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+       height: 100%;
+       width: 100vw;
+    }
+    .nav{
+        width: 100%;
+        background-color: rgba(135, 240, 205, 0.464);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        width: 100%;
+    }
+    .nav1{
+        margin-left: 600px ;
+        margin-right: 15px;
+        font-weight: 1000;
+        list-style: none;
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #p1{
+        font-size: larger;
+    }
+    .li1{
+        display: flex;
+        flex-direction: row;
+    } 
+    #p2{
+        padding-right: 25px;
+    }
+    #p3{
+        padding-right: 18px;
+    }
+    #p4{
+        padding-right: 10px;
+    }
+    main{
+        height: 652px;
+        width: 100%;
+        background-color: rgb(97, 73, 119);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 652px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(133, 166, 195);
+        gap: 0px;
+    }
+    .item1{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+    .item1 img{
+        padding-left: 80px;
+    }
+    .item2{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+    .item2 img{
+        padding-left: 80px;
+    }
+    .box2 h4{
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .box2 ul{
+        padding-left: 30px;
+    }
+    .box3 h4{
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .box3 ol{
+        padding-left: 30px;
+    }
+    .flip img{
+        height: 200px;
+        width: 340px;
+        transition: all 2s 0s;
+    }
+    .flip img:hover{
+        transform :scale(1.1)
+    }
+    footer{
+        width: 100%;
+        height: 27px;
+        background-color: rgb(165, 84, 84);
+        padding-left: 20px;
+        padding-top: 5px;
+        font-style: italic;
+        font-size: large;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="nav">
+               <nav>
+                   <ul class="nav1">
+                       <li>
+                           <p id="p1">Recipe Project</p>
+                       </li>
+                       <li class="li1">
+                           <p id="p2"><a href="#">CONTACT US</a></p>
+                           <p id="p3"><a href="#">HOME</a></p>
+                           <p id="p4"><a href="#">ABOUT</a></p>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+        </header>
+        <main>
+            <div class="card">
+                <!-- item1 -->
+                <section>
+                    <div class="item1">
+                        <div class="box1">
+                            <h2>RASGULLA</h2>
+                            <div class="box2">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    <li>sugar</li>
+                                    <li>flour</li>
+                                    <li>oil</li>
+                                </ul>
+                            </div>
+                            <div class="box3">
+                                <h4>Recipe</h4>
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="flip">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.QcxNfQmsviLJJNDqQ5NpzAHaEK&pid=Api&P=0&h=180">
+                        </div>
+                    </div>
+                </section>  
+                <!-- item2 -->
+                <section>
+                    <div class="item2">
+                        <div class="box1">
+                            <h2>Gulab Jamun</h2>
+                            <div class="box2">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    <li>sugar</li>
+                                    <li>flour</li>
+                                    <li>oil</li>
+                                </ul>
+                            </div>
+                            <div class="box3">
+                                <h4>Recipe</h4>
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ol>
+                            </div>
+                        </div>     
+                        <div class="flip">
+                            <img src="https://recipes.timesofindia.com/photo/71180530.cms">
+                        </div>   
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Copyright  &copy;  Recipe Website Pvt.Ltd 2024 All Rights Reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
